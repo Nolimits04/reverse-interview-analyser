@@ -100,6 +100,106 @@ _STRINGS: dict[str, dict[str, str]] = {
             "గ్యాప్ విశ్లేషణ మరియు ఇంటర్వ్యూ సన్నద్ధత స్కోర్ అందుబాటులో లేవు."
         ),
     },
+    "section_hidden_skills": {
+        "en": "Hidden Skills",
+        "hi": "छिपे हुए कौशल",
+        "te": "దాగి ఉన్న నైపుణ్యాలు",
+    },
+    "col_explicit_requirement": {
+        "en": "Explicit Requirement",
+        "hi": "स्पष्ट आवश्यकता",
+        "te": "స్పష్టమైన అవసరం",
+    },
+    "col_hidden_requirement": {
+        "en": "Hidden Requirement",
+        "hi": "छिपी हुई आवश्यकता",
+        "te": "దాగి ఉన్న అవసరం",
+    },
+    "section_interview_questions": {
+        "en": "Likely Interview Questions",
+        "hi": "संभावित इंटरव्यू प्रश्न",
+        "te": "సంభావ్య ఇంటర్వ్యూ ప్రశ్నలు",
+    },
+    "section_gap_analysis": {
+        "en": "Resume Gap Analysis",
+        "hi": "रिज्यूमे गैप विश्लेषण",
+        "te": "రెజ్యూమ్ గ్యాప్ విశ్లేషణ",
+    },
+    "col_requirement": {
+        "en": "Requirement",
+        "hi": "आवश्यकता",
+        "te": "అవసరం",
+    },
+    "col_match": {
+        "en": "Match",
+        "hi": "मिलान",
+        "te": "మ్యాచ్",
+    },
+    "col_note": {
+        "en": "Note",
+        "hi": "टिप्पणी",
+        "te": "గమనిక",
+    },
+    "category_strong_match": {
+        "en": "Strong Match",
+        "hi": "मजबूत मिलान",
+        "te": "బలమైన మ్యాచ్",
+    },
+    "category_weak_match": {
+        "en": "Weak Match",
+        "hi": "कमजोर मिलान",
+        "te": "బలహీనమైన మ్యాచ్",
+    },
+    "category_missing": {
+        "en": "Missing",
+        "hi": "गायब",
+        "te": "లేదు",
+    },
+    "section_readiness_score": {
+        "en": "Interview Readiness Score",
+        "hi": "इंटरव्यू तैयारी स्कोर",
+        "te": "ఇంటర్వ్యూ సన్నద్ధత స్కోర్",
+    },
+    "metric_technical_match": {
+        "en": "Technical Match",
+        "hi": "तकनीकी मिलान",
+        "te": "టెక్నికల్ మ్యాచ్",
+    },
+    "metric_communication_match": {
+        "en": "Communication Match",
+        "hi": "संचार मिलान",
+        "te": "కమ్యూనికేషన్ మ్యాచ్",
+    },
+    "metric_domain_match": {
+        "en": "Domain Match",
+        "hi": "डोमेन मिलान",
+        "te": "డొమైన్ మ్యాచ్",
+    },
+    "metric_overall_readiness": {
+        "en": "Overall Readiness",
+        "hi": "समग्र तैयारी",
+        "te": "మొత్తం సన్నద్ధత",
+    },
+    "section_prep_plan": {
+        "en": "Preparation Plan",
+        "hi": "तैयारी योजना",
+        "te": "సన్నద్ధత ప్రణాళిక",
+    },
+    "section_hiring_manager_sim": {
+        "en": "Hiring Manager Simulation",
+        "hi": "हायरिंग मैनेजर सिमुलेशन",
+        "te": "హైరింగ్ మేనేజర్ సిమ్యులేషన్",
+    },
+    "running_analysis": {
+        "en": "Running analysis...",
+        "hi": "विश्लेषण चल रहा है...",
+        "te": "విశ్లేషణ జరుగుతోంది...",
+    },
+    "section_unavailable_fallback": {
+        "en": "This section could not be generated for this run.",
+        "hi": "इस रन के लिए यह सेक्शन तैयार नहीं किया जा सका।",
+        "te": "ఈ రన్ కోసం ఈ విభాగాన్ని రూపొందించలేకపోయాము.",
+    },
 }
 
 DEFAULT_LANGUAGE = "en"
