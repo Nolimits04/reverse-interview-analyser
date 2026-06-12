@@ -1,0 +1,42 @@
+stages:
+  - lint
+  - format
+  - type_check
+  - test
+  - coverage
+
+default:
+  image: python:3.11-slim
+  before_script:
+    - pip install --break-system-packages -r requirements.txt
+
+lint:
+  stage: lint
+  script:
+    - ruff check .
+
+format:
+  stage: format
+  script:
+    - ruff format --check .
+
+type_check:
+  stage: type_check
+  script:
+    - mypy app
+
+test:
+  stage: test
+  script:
+    - pytest --cov=app --cov-report=term-missing --cov-report=xml
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+
+coverage:
+  stage: coverage
+  script:
+    - pytest --cov=app --cov-report=term
+  coverage: '/TOTAL.*\s+(\d+%)$/'
