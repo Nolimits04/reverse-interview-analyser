@@ -44,7 +44,7 @@ class LLMClient(ABC):
 class GeminiClient(LLMClient):
     """LLM client backed by the Google Gemini API."""
 
-    def __init__(self, api_key: str, model: str = "gemini-1.5-flash") -> None:
+    def __init__(self, api_key: str, model: str = "gemini-2.5-flash") -> None:
         if not api_key:
             raise ValueError("GeminiClient requires a non-empty api_key")
         self._api_key = api_key
@@ -58,9 +58,7 @@ class GeminiClient(LLMClient):
         try:
             import google.generativeai as genai
         except ImportError as exc:  # pragma: no cover - import guard
-            raise RuntimeError(
-                "google-generativeai package is not installed"
-            ) from exc
+            raise RuntimeError("google-generativeai package is not installed") from exc
 
         try:
             genai.configure(api_key=self._api_key)

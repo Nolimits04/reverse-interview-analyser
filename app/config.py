@@ -37,11 +37,11 @@ def get_settings() -> Settings:
         OLLAMA_HOST: Base URL for a local Ollama instance
             (default: http://localhost:11434).
         OLLAMA_MODEL: Model name to use with Ollama (default: llama3).
-        GEMINI_MODEL: Gemini model name (default: gemini-1.5-flash).
+        GEMINI_MODEL: Gemini model name (default: gemini-2.5-flash).
     """
     return Settings(
         fallback_gemini_api_key=os.environ.get("FALLBACK_GEMINI_API_KEY") or None,
         ollama_host=os.environ.get("OLLAMA_HOST", "http://localhost:11434"),
         ollama_model=os.environ.get("OLLAMA_MODEL", "llama3"),
-        gemini_model=os.environ.get("GEMINI_MODEL", "gemini-1.5-flash"),
+        gemini_model=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"),
     )

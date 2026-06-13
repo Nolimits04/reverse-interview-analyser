@@ -76,7 +76,7 @@ cp .env.example .env
 | `FALLBACK_GEMINI_API_KEY`  | Server-side Gemini key used only if no user key and no Ollama.   | _(empty)_                 |
 | `OLLAMA_HOST`              | Base URL of a local Ollama instance.                             | `http://localhost:11434`  |
 | `OLLAMA_MODEL`             | Model name to use with Ollama.                                   | `llama3`                  |
-| `GEMINI_MODEL`             | Gemini model name (used for both BYOK and fallback).             | `gemini-1.5-flash`        |
+| `GEMINI_MODEL`             | Gemini model name (used for both BYOK and fallback).             | `gemini-2.5-flash`        |
 
 **Never commit a real `.env` file** — it's listed in `.gitignore`.
 
